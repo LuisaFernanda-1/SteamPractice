@@ -16,35 +16,185 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="p-0 m-0">
+		<!-- <slot /> -->
+		 <header class="h-20 bg-black">
+			<div class="container max-w-[1200px] mx-auto">
+				<div class="flex-menu mx-0 flex h-20 w-3/5 float-left items-center bg- #ece4e4 font-sans uppercase  ">
+					<img class="w-40" src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016">
+					
+					<menu>
+						<li class="mx-3 list-none inline-block"><a class="font-semibold bg-#ece4e4 no-underline hover:bg-white" href="#">Tienda</a></li>
+						<li class="mx-3 list-none inline-block"><a class="font-semibold bg-#ece4e4 no-underline  hover:bg-white"href="#">Comunidad</a></li>
+						<li class="mx-3 list-none inline-block"><a class="font-semibold bg-#ece4e4 no-underline  hover:bg-white"href="#">Acerca de</a></li>
+						<li class="mx-3 list-none inline-block"><a class="font-semibold bg-#ece4e4 no-underline  hover:bg-white"href="#">Soporte</a></li>
+					<menu>
+				</div>
+				<div class="menu-right bg-white float-left w-2/5 my-2 font-sans ">
+					<a href="#" class="btn-download mx-0 my-2 no-underline bg-slate-100 hover:bg-slate-50">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+						</svg>
+						Instalar Steam
+					</a>
+					
+					<a class="mx-0 my-2 no-underline bg-slate-100 hover:bg-slate-50" href="#">Iniciar Sesion</a>
+					|
+					<a class="mx-0 my-2 no-underline bg-slate-100 hover:bg-slate-50" href="#">Idioma</a>
+				</div>
+			</div>
+		 </header>
+		 <div class="banner">
+
+		 </div>
+		 <div class="left-menu"></div>
+		 <div class="banner2 container max-w-[1200px] mx-auto">
+			
+		 </div>
+
+		 <div class="banner3"></div>
+		 <div class="group items-center hover:cursor-pointer duration-300 transition-colors hover:bg-blue-500 rounded-2xl py-2 px-4  text-white inline-flex bg-blue-600">
+
+
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 mr-1 mt-1 group-hover:animate-spin">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+			  </svg>
+			  
+			Presioname
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 mt-[4px] ml-[1px]">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+			  </svg>
+			  
+		</div>
+			 <!-- // es padding : p -->
+		     <!-- si queremos que pase algo encima de un elemento es clase hover -->
+		     <!-- crusor pointer es para que cambie de flecha a mano  -->
+		     <!-- hero icons son iconos de tailwind  -->
+			<!-- margin top es mt -->
+			<!-- para valores arbitrarios colocamos braquets -->
+			 <!-- animate spin es para girar  -->
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+<style >
+
+	/*html, body{
+		padding: 0;
+		margin: 0;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+	*/
+	/*
+	header{
+		height: 80px;
+		background: #161a24;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	*/
+
+	/* .container{
+		max-width: 1200px;
+		margin: 0 auto;
+		
+	} */
+
+	/* .flex-menu{
+		margin: 0;
+		display: flex;
+		height: 80px;
+		width: 60%;
+		float: left;
+		align-items: center;
+		color: #ece4e4;
+		font-family: sans-serif;
+		text-transform: uppercase;
+	} */
+/* 
+	.flex-menu a{
+		font-weight: 600;
+		color: #ece4e4;
+		text-decoration: none;
+	} */
+
+	/* .flex-menu a:hover{
+		color: #ffffff;
+		text-decoration: none;
+	} */
+	/*
+	.flex-menu img {
+		width: 160px;
 	}
+		*/
+/*
+	.flex-menu li{
+		margin-left: 10px;
+		list-style: none;
+		display: inline-block;
+	}
+		*/
+		/*
+	.menu-right{
+		color: #ece4e4;
+		float: left;
+		width: 40%;
+		margin-top: 8px;
+		font-family: sans-serif;
+	}
+		*/
+/*
+	.menu-right a{
+		margin: 0 6px;
+		text-decoration: none;
+		color: #e7dcdc;
+	}
+*/
+/*
+	.menu-right a:hover{
+		color: #ffffff;
+	}
+*/
+	.btn-download{
+		color: #ffffff;
+		background-color: #298f29;
+		display: inline-block;
+		padding: 6px 12px;
+		font-family: sans-serif;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.btn-download svg{
+		width: 19px;
+	}
+
+	.btn-download:hover{
+		background-color: #31ad31;
+	}
+
+	.banner{
+		background: orange;
+		height: 360px;
+	}
+
+	.banner2{
+		position: relative;
+		background: purple;
+		height: 240px;
+	}
+
+	.left-menu {
+		float: left;
+		background: pink;
+		width: 180px;
+		height: 360px;
+		z-index: 1;
+		position: sticky;
+		top: 0;
+		left: calc(((100% - 1200px) / 2) - 180px);
+	}
+
+	.banner3 {
+		background-color: turquoise;
+		height: 1200px;
+	}
+
 </style>
